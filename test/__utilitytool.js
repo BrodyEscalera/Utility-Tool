@@ -1,7 +1,7 @@
 'use strict'
 const request = require('supertest');// this reuires the supertest module and sets to a variable
 const chai = require('chai');
-const logger = require('../src/lib/debugUtility');
+const logger = require('../debugUtility');
 const expect = chai.expect;
 
 describe('Debug utility tool | ', () => {
