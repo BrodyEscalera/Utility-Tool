@@ -13,7 +13,7 @@ Logging utility tool
  ```
  in the .env file - Logs will be presented in the terminal window.
 
-* To disable debugging set  ```env DEBUG=false ``` in the .env file - logs will be suppressed from the terminal and saved to /logs/All-logs.log.
+* To disable debugging set  ```env DEBUG=false ``` in the .env file
 
 The logging functions are handled by the debugUtility.js
 the four methods for debugging are
