@@ -79,7 +79,32 @@ function output(type, msgInput){
       outputMethod(msgOutput);
 
 }
+  // Version Bumper
+  this.bump = (origVersionString, incrementType) => {
+    const aryVersion = origVersionString.split('.');
 
+    // Based upon the incrementType (case-insensitive)
+    if(incrementType.toLowerCase() === 'major'){
+      // Major modification the version number according to the semver rule
+      aryVersion[0] = parseInt(aryVersion[0]) + 1;
+      aryVersion[1] = 0;
+      aryVersion[2] = 0;
+    } else if(incrementType.toLowerCase() === 'minor'){
+      // Minor modification the version number according to the semver rule
+      aryVersion[1] = parseInt(aryVersion[1]) + 1;
+      aryVersion[2] = 0;
+    } else if(incrementType.toLowerCase() === 'patch'){
+      // Patch modification the version number according to the semver rule
+      aryVersion[2] = parseInt(aryVersion[2]) + 1;
+    } else {
+      // return false if the incrementType is not matched
+      return false;
+    }
+
+    // Return the version number as a fully assembed string
+    return aryVersion.join('.');
+  }
+};
 
 
 /** This creates a version of logger and exports it to the application **/
