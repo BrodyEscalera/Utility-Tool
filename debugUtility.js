@@ -1,3 +1,4 @@
+'use strict';
 const debugKey = process.env.DEBUG; // this variable is set to the
 // environmental DEBUG variable in the .env file.
 
@@ -12,8 +13,6 @@ the logs will be appended to the all-logs file in the logs directory.
 const logger = function JSClass(cont) {
   /** The "use strict" diretive is necessary because Block-scoped declarations
      (let, const, function, class) not yet supported outside strict mode **/
-
-  'use strict';
   if(debugKey){
     const sep = ':';
     const clear = '\x1B[0m';// ansi value formats the text color to default
