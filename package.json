@@ -1,6 +1,6 @@
 {
   "name": "brody_logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Utility Tool for formating/supressing console.logs",
   "main": "debugUtility.js",
   "directories": {

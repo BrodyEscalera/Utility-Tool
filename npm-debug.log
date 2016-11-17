@@ -12,21 +12,21 @@
 7 silly cache add   rawSpec: '.',
 7 silly cache add   spec: '/Users/Brody/Desktop/Utility-Tool',
 7 silly cache add   type: 'directory' }
-8 verbose addLocalDirectory /Users/Brody/.npm/brody_logger/1.0.1/package.tgz not in flight; packing
+8 verbose addLocalDirectory /Users/Brody/.npm/brody_logger/1.0.2/package.tgz not in flight; packing
 9 verbose correctMkdir /Users/Brody/.npm correctMkdir not in flight; initializing
-10 verbose tar pack [ '/Users/Brody/.npm/brody_logger/1.0.1/package.tgz',
+10 verbose tar pack [ '/Users/Brody/.npm/brody_logger/1.0.2/package.tgz',
 10 verbose tar pack   '/Users/Brody/Desktop/Utility-Tool' ]
-11 verbose tarball /Users/Brody/.npm/brody_logger/1.0.1/package.tgz
+11 verbose tarball /Users/Brody/.npm/brody_logger/1.0.2/package.tgz
 12 verbose folder /Users/Brody/Desktop/Utility-Tool
-13 info prepublish brody_logger@1.0.1
-14 verbose addLocalTarball adding from inside cache /Users/Brody/.npm/brody_logger/1.0.1/package.tgz
+13 info prepublish brody_logger@1.0.2
+14 verbose addLocalTarball adding from inside cache /Users/Brody/.npm/brody_logger/1.0.2/package.tgz
 15 verbose correctMkdir /Users/Brody/.npm correctMkdir not in flight; initializing
-16 silly cache afterAdd brody_logger@1.0.1
-17 verbose afterAdd /Users/Brody/.npm/brody_logger/1.0.1/package/package.json not in flight; writing
+16 silly cache afterAdd brody_logger@1.0.2
+17 verbose afterAdd /Users/Brody/.npm/brody_logger/1.0.2/package/package.json not in flight; writing
 18 verbose correctMkdir /Users/Brody/.npm correctMkdir not in flight; initializing
-19 verbose afterAdd /Users/Brody/.npm/brody_logger/1.0.1/package/package.json written
+19 verbose afterAdd /Users/Brody/.npm/brody_logger/1.0.2/package/package.json written
 20 silly publish { name: 'brody_logger',
-20 silly publish   version: '1.0.1',
+20 silly publish   version: '1.0.2',
 20 silly publish   description: 'Utility Tool for formating/supressing console.logs',
 20 silly publish   main: 'debugUtility.js',
 20 silly publish   directories: { test: 'test' },
@@ -41,9 +41,9 @@
 20 silly publish   dependencies: { chai: '^3.5.0', supertest: '^2.0.1' },
 20 silly publish   readme: '# Utility-Tool\nLogging utility tool\n#installation\n ```bash\n $ npm install brody_logger\n ```\n\n#Usage\n* To enable debugging create an environmental variable in the .env file and set it to true.\n\n ```env\n DEBUG=true\n ```\n in the .env file - Logs will be presented in the terminal window.\n\n* To disable debugging set  ```env DEBUG=false ``` in the .env file - logs will be suppressed from the terminal and saved to /logs/All-logs.log.\n\nThe logging functions are handled by the debugUtility.js\nthe four methods for debugging are\n* err\n* warn\n* debug\n* log\n\nto include the debugUtility in your files place\n ```js\nconst logger = require(\'brody_logger\');\n ```\n\nTo use the looger throughout your code simple treat the logger as you would a\n ```js\n console.log()\n  ```\n  Example:\n  ```js\n  //some code\n  logger.log(\'Message I want to send to the terminal or log file without any tag\');\n  //some code\n  logger.debug(\'Message I want to send to terminal or log file with a debug flag\');\n  //some code\n  logger.err(\'Message I want to send to terminal or log file with an err flag\');\n  //some code\n  logger.warn(\'Message I want to send to terminal or log file with an warn flag\')\n   ```\nColors for the individual flags can be modified in the debugUtility.js\n',
 20 silly publish   readmeFilename: 'README.md',
-20 silly publish   gitHead: '212a714c132082dbf8ccf7f02431c7f6e5423dbd',
-20 silly publish   _id: 'brody_logger@1.0.1',
-20 silly publish   _shasum: 'e172816d4f2194981b9a4683a5a4020bdef7f709',
+20 silly publish   gitHead: 'fbb337a2fe038ba462c18b40df2ab97a9a7777cd',
+20 silly publish   _id: 'brody_logger@1.0.2',
+20 silly publish   _shasum: '16bc8da0e3376ce590843904ad6a25dfc4dbb7f3',
 20 silly publish   _from: '.' }
 21 verbose getPublishConfig undefined
 22 silly mapToRegistry name brody_logger
@@ -58,29 +58,29 @@
 25 silly mapToRegistry   type: 'tag' }
 26 silly mapToRegistry uri https://registry.npmjs.org/brody_logger
 27 verbose publish registryBase https://registry.npmjs.org/
-28 silly publish uploading /Users/Brody/.npm/brody_logger/1.0.1/package.tgz
+28 silly publish uploading /Users/Brody/.npm/brody_logger/1.0.2/package.tgz
 29 verbose request uri https://registry.npmjs.org/brody_logger
 30 verbose request sending authorization for write operation
-31 info attempt registry request try #1 at 3:09:33 PM
+31 info attempt registry request try #1 at 3:12:34 PM
 32 verbose request using bearer token for auth
-33 verbose request id 073d2ef88cc471d2
+33 verbose request id f96524968272d887
 34 http request PUT https://registry.npmjs.org/brody_logger
 35 http 403 https://registry.npmjs.org/brody_logger
 36 verbose headers { 'content-type': 'application/json',
 36 verbose headers   'cache-control': 'max-age=300',
 36 verbose headers   'content-length': '95',
 36 verbose headers   'accept-ranges': 'bytes',
-36 verbose headers   date: 'Tue, 15 Nov 2016 23:09:34 GMT',
+36 verbose headers   date: 'Tue, 15 Nov 2016 23:12:34 GMT',
 36 verbose headers   via: '1.1 varnish',
 36 verbose headers   connection: 'keep-alive',
-36 verbose headers   'x-served-by': 'cache-sea1927-SEA',
+36 verbose headers   'x-served-by': 'cache-sea1920-SEA',
 36 verbose headers   'x-cache': 'MISS',
 36 verbose headers   'x-cache-hits': '0',
-36 verbose headers   'x-timer': 'S1479251374.045573,VS0,VE65',
+36 verbose headers   'x-timer': 'S1479251554.322834,VS0,VE49',
 36 verbose headers   vary: 'Accept-Encoding' }
 37 verbose request invalidating /Users/Brody/.npm/registry.npmjs.org/brody_logger on PUT
 38 error publish Failed PUT 403
-39 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : brody_logger
+39 verbose stack Error: "You cannot publish over the previously published version 1.0.2." : brody_logger
 39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
 39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
 39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
@@ -99,7 +99,7 @@
 45 error node v4.5.0
 46 error npm  v2.15.9
 47 error code E403
-48 error "You cannot publish over the previously published version 1.0.1." : brody_logger
+48 error "You cannot publish over the previously published version 1.0.2." : brody_logger
 49 error If you need help, you may report this error at:
 49 error     <https://github.com/npm/npm/issues>
 50 verbose exit [ 1, true ]

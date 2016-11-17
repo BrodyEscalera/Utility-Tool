@@ -80,6 +80,8 @@ function output(type, msgInput){
 
 }
 
+
+
 /** This creates a version of logger and exports it to the application **/
 const debugUtility = new logger();
 module.exports = debugUtility;

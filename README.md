@@ -5,7 +5,20 @@ Logging utility tool
  $ npm install brody_logger
  ```
 
-#Usage
+# Usage
+
+## Version Bumper
+
+With the utility tool required to your node file call the .bump method with the arguments of Semantic Version Number and how you would like the number incremented ('Major', 'Minor', or 'Patch'). This is case insensitive.
+
+```js
+const logger = require('brody_logger');
+
+// Note: You should supply the old version number dynamically
+const newVersionNumber = logger.bump('1.11.111', 'patch'));
+```
+
+## Logging
 * To enable debugging create an environmental variable in the .env file and set it to true.
 
  ```env
