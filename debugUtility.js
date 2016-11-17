@@ -79,7 +79,6 @@ function output(type, msgInput){
       outputMethod(msgOutput);
 
 }
-
   // Version Bumper
   this.bump = (origVersionString, incrementType) => {
     const aryVersion = origVersionString.split('.');
