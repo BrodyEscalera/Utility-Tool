@@ -58,5 +58,8 @@ To use the looger throughout your code simple treat the logger as you would a
   logger.err('Message I want to send to terminal or log file with an err flag');
   //some code
   logger.warn('Message I want to send to terminal or log file with an warn flag')
+
+  logger.sys('Message I want to send to terminal or log file with an sys flag')
+   // * The sys flag will prepend a timestamp to the message.
    ```
 Colors for the individual flags can be modified in the debugUtility.js
