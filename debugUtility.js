@@ -39,6 +39,10 @@ const logger = function JSClass(cont) {
     this.log = (container) => {
       output('log', container);
     };
+
+    this.sys = (container) => {
+      output('sys', container);
+    };
   }
   // Version Bumper
   this.bump = (origVersionString, incrementType) => {
@@ -68,6 +72,14 @@ const logger = function JSClass(cont) {
 };
 
 
+const timeStamp = () => {
+    var dateTime=new Date(),
+        h =dateTime.getUTCHours(),
+        m =dateTime.getUTCMinutes(),
+        s =dateTime.getUTCSeconds()
+    return (h +':'+m+':'+ s)
+};
+
 function output(type, msgInput){
   let sep = ':';
   const clear = '\x1B[0m';// ansi value formats the text color to default
@@ -88,6 +100,12 @@ function output(type, msgInput){
       outputMethod = console.log;
 
       break;
+      case 'sys':
+        color = '\x1B[37m'; // ansi value formats the text color to blue
+        tag = ' System ' + timeStamp();
+        outputMethod = console.log;
+
+        break;
     case 'err':
       color = '\x1B[31m'; // ansi value formats the text color to red
       tag = ' Error ';

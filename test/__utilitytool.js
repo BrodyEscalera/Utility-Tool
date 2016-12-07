@@ -28,6 +28,11 @@ const logPointsArray = [
     functionName: logger.warn,
     functionType: 'logger.warn',
   },
+  {
+    testName: 'Will logg Sys message',
+    functionName: logger.sys,
+    functionType: 'logger.sys',
+  },
 ]
 
 for (let i = 0; i < logPointsArray.length; i++) {
