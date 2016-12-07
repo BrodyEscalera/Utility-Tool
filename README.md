@@ -10,8 +10,12 @@ Logging utility tool
 ## Version Bumper
 
 With the utility tool required to your node file call the .bump method with the arguments of Semantic Version Number and how you would like the number incremented ('Major', 'Minor', or 'Patch'). This is case insensitive.
-
+Your server will require access to the .env file. I recommend adding the 'dotenv' node module
+```bash
+$ npm i --save dotenv
+```
 ```js
+require('dotenv').config();
 const logger = require('brody_logger');
 
 // Note: You should supply the old version number dynamically
